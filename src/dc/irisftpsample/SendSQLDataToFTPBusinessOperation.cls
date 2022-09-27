@@ -5,7 +5,7 @@ Parameter ADAPTER = "EnsLib.FTP.OutboundAdapter";
 
 Property Filename As %String(MAXLEN = 1000);
 
-Parameter SETTINGS As %String = "Filename";
+Parameter SETTINGS = "Filename:Basic";
 
 Method OnMessage(pRequest As Ens.StreamContainer, Output pResponse As %Persistent) As %Status
 {
