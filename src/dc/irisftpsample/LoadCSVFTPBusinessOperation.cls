@@ -21,7 +21,7 @@ Property UseLoadData As %Boolean [ InitialExpression = 1 ];
 
 Parameter SETTINGS = "Header:Basic,Delimiter:Basic,Classname:Basic,Prowtype:Basic,GuessTypes:Basic,Append:Basic,UseLoadData:Basic";
 
-Method LoadCSVIntoTable(pInput As dc.irisftpsample.LoadCSVFTPReqMessage, Output pOutput As Ens.StringResponse) As %Status
+Method LoadCSVIntoTable(pInput As Ens.StreamContainer, Output pOutput As Ens.StringResponse) As %Status
 {
     
     Set tSC = $$$OK
@@ -41,7 +41,7 @@ Method LoadCSVIntoTable(pInput As dc.irisftpsample.LoadCSVFTPReqMessage, Output 
 XData MessageMap
 {
 <MapItems>
-    <MapItem MessageType="dc.irisftpsample.LoadCSVFTPReqMessage">
+    <MapItem MessageType="Ens.StreamContainer">
         <Method>LoadCSVIntoTable</Method>
     </MapItem>
 </MapItems>

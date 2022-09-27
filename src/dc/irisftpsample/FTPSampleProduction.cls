@@ -25,7 +25,7 @@ XData ProductionDefinition
     <Setting Target="Host" Name="Prowtype"></Setting>
     <Setting Target="Host" Name="GuessTypes">1</Setting>
     <Setting Target="Host" Name="Append">1</Setting>
-    <Setting Target="Host" Name="UseLoadData">1</Setting>
+    <Setting Target="Host" Name="UseLoadData">0</Setting> 
   </Item>
   
   <Item Name="PaymentSQLBusinessService" Category="" ClassName="EnsLib.SQL.Service.GenericService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">

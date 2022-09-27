@@ -8,7 +8,7 @@ Method OnProcessInput(pInput As %Stream.Object, pOutput As %RegisteredObject) As
     Set tSC = $$$OK, 
         tSource = pInput.Attributes("Filename"),
         tFileLocation = pInput.Attributes("FTPDir"),
-        pInput=##class(dc.irisftpsample.LoadCSVFTPReqMessage).%New(pInput)
+        pInput=##class(Ens.StreamContainer).%New(pInput)
 
     Set tSC = ..SendRequestSync("LoadCSVFTPBusinessOperation", pInput, .pOutput, -1)
     
