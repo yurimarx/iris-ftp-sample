@@ -9,7 +9,7 @@
       <Dependencies>
         <ModuleReference>
           <Name>csvgen</Name>
-          <Version>1.4.1</Version>
+          <Version>1.5.1</Version>
         </ModuleReference>
       </Dependencies>
       <SourcesRoot>src</SourcesRoot>
